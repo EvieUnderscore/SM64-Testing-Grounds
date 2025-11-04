@@ -394,6 +394,8 @@ void bhv_1up_running_away_loop(void);
 void bhv_1up_sliding_loop(void);
 void bhv_1up_init(void);
 void bhv_1up_loop(void);
+void bhv_bottledwater_init(void);
+void bhv_bottledwater_loop(void);
 void bhv_1up_jump_on_approach_loop(void);
 void bhv_1up_hidden_loop(void);
 void bhv_1up_hidden_trigger_loop(void);

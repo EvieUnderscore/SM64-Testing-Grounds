@@ -13,7 +13,7 @@
 /**
  * Enable lives and the lives counter. The number next to the define is the number of lives you start with.
  */
-// #define ENABLE_LIVES 4
+ #define ENABLE_LIVES 4
 
 /**
  * This can be 0..127.
@@ -38,7 +38,7 @@
 /**
  * Stars don't kick you out of the level (does not play nicely with vanilla).
  */
-// #define NON_STOP_STARS
+ #define NON_STOP_STARS
 
 /**
  * Bowser keys always exit the level. Only has an effect if NON_STOP_STARS is enabled.
@@ -68,7 +68,7 @@
 /**
  * Shows an "A" when Mario is able to talk [requires EASIER_DIALOG_TRIGGER].
  */
-// #define DIALOG_INDICATOR
+ #define DIALOG_INDICATOR
 
 /**
  * Include the English characters that were missing from US segment2 and the rumble pak texture if using rumble.
@@ -86,7 +86,7 @@
 /**
  * Adds multiple languages to the game. Just a placeholder for the most part, because it only works with EU, and must be enabled with EU.
  */
-#define MULTILANG (0 || VERSION_EU)
+// #define MULTILANG (0 || VERSION_EU)
 
 /**
  * Prevents infinite death loops by always restoring Mario's health when he's warped to any kind of warp while dead.
@@ -97,4 +97,4 @@
  * The level that the game starts with immediately after file select.
  * The levelscript needs to have a MARIO_POS command for this to work.
  */
-#define START_LEVEL LEVEL_CASTLE_GROUNDS
+#define START_LEVEL LEVEL_CASTLE
