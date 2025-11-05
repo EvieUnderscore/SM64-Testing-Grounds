@@ -451,6 +451,10 @@ Gfx *geo_switch_mario_hand(s32 callContext, struct GraphNode *node, UNUSED Mat4 
                     (bodyState->handState < 2) ? bodyState->handState : MARIO_HAND_FISTS;
             }
         }
+
+        if(gMarioHoldingBottle) {
+            switchCase->selectedCase = MARIO_HAND_HOLDING_CAP;
+        }
     }
     return NULL;
 }

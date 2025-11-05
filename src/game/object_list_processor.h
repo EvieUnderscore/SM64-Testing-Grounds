@@ -83,6 +83,8 @@ extern struct Object gMacroObjectDefaultParent;
 extern struct ObjectNode *gObjectLists;
 extern struct ObjectNode gFreeObjectList;
 
+extern u8 gMarioHoldingBottle;
+
 extern struct Object *gMarioObject;
 extern struct Object *gLuigiObject;
 extern struct Object *gCurrentObject;

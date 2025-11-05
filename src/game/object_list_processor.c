@@ -22,7 +22,6 @@
 #include "puppyprint.h"
 #include "profiling.h"
 
-
 /**
  * Flags controlling what debug info is displayed.
  */
@@ -90,6 +89,8 @@ struct ObjectNode gFreeObjectList;
  */
 struct Object *gMarioObject;
 
+u8 gMarioHoldingBottle;
+
 /**
  * An object variable that may have been used to represent the planned
  * second player. This is speculation, based on its position and its usage in
@@ -137,6 +138,7 @@ s32 gNumStaticSurfaceNodes;
  * The number of surfaces in the pool.
  */
 s32 gNumStaticSurfaces;
+
 
 /**
  * A pool used by chain chomp and wiggler to allocate their body parts.

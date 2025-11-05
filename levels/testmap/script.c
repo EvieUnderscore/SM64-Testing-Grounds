@@ -13,6 +13,7 @@
 
 #include "actors/common0.h"
 #include "actors/common1.h"
+#include "actors/group0.h"
 #include "make_const_nonconst.h"
 #include "levels/testmap/header.h"
 
@@ -35,6 +36,7 @@ const LevelScript level_testmap_entry[] = {
 	JUMP_LINK(script_func_global_1), 
 	JUMP_LINK(script_func_global_4), 
 	JUMP_LINK(script_func_global_15), 
+	LOAD_MODEL_FROM_GEO(MODEL_WATER_BOTTLE, water_bottle_geo), 
 	/* Fast64 begin persistent block [level commands] */
 	/* Fast64 end persistent block [level commands] */
 
@@ -42,7 +44,7 @@ const LevelScript level_testmap_entry[] = {
 		WARP_NODE(0x0A, LEVEL_BOB, 0x01, 0x0A, WARP_NO_CHECKPOINT),
 		WARP_NODE(0xF0, LEVEL_BOB, 0x01, 0x0A, WARP_NO_CHECKPOINT),
 		WARP_NODE(0xF1, LEVEL_BOB, 0x01, 0x0A, WARP_NO_CHECKPOINT),
-		OBJECT(MODEL_METAL_BOX, 0, 0, 794, 0, 0, 0, 0x00000000, bhvWaterBottle),
+		OBJECT(MODEL_WATER_BOTTLE, -350, 162, -334, 0, 0, 0, 0x00000000, bhvWaterBottle),
 		MARIO_POS(0x01, 0, 0, 90, 0),
 		OBJECT(MODEL_NONE, 0, 90, 0, 0, 0, 0, 0x000A0000, bhvSpinAirborneWarp),
 		TERRAIN(testmap_area_1_collision),

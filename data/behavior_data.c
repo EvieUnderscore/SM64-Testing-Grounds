@@ -6074,14 +6074,18 @@ const BehaviorScript bhvIntroScene[] = {
     END_LOOP(),
 };
 
-extern void bhv_moving_platform();
+extern void bhv_waterbottle_init();
+extern void bhv_waterbottle_loop();
 const BehaviorScript bhvWaterBottle[] = {
     BEGIN(OBJ_LIST_SURFACE),
-    OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
-    LOAD_COLLISION_DATA(metal_box_seg8_collision_08024C28),
+    OR_INT(oFlags, OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
+    SCALE(/*Unused*/ 0, /*Field*/ 40),
+    SET_HITBOX_WITH_OFFSET(/*Radius*/ 50, /*Height*/ 30, /*Downwards offset*/ 0),
+    SET_FLOAT(oGraphYOffset, 30),
     SET_FLOAT(oDrawingDistance, 20000),
+    CALL_NATIVE(bhv_waterbottle_init),
     BEGIN_LOOP(),
-        CALL_NATIVE(bhv_moving_platform),
-        CALL_NATIVE(load_object_collision_model),
+        SET_INT(oIntangibleTimer, 0),
+        CALL_NATIVE(bhv_waterbottle_loop),
     END_LOOP(),
 };

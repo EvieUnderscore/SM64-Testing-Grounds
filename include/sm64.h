@@ -218,6 +218,7 @@ enum MarioFlags {
     MARIO_UNUSED_29           = /* 0x20000000 */ (1 << 29),
     MARIO_AIR_HIT_WALL        = /* 0x40000000 */ (1 << 30),
     MARIO_PUSHING             = /* 0x80000000 */ (1 << 31),
+//    MARIO_HOLDING_WATER       =                  (1 << 32),
     MARIO_SPECIAL_CAPS        = (MARIO_VANISH_CAP | MARIO_METAL_CAP | MARIO_WING_CAP),
     MARIO_CAPS                = (MARIO_NORMAL_CAP | MARIO_SPECIAL_CAPS),
 };

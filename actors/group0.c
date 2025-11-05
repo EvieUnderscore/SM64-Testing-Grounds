@@ -30,3 +30,8 @@
 #include "src/s2d_engine/s2d_config.h"
 #include FONT_C_FILE
 #endif
+
+//#include "water_bottle/collision.inc.c"
+//#include "water_bottle/model.inc.c"
+#include "water_bottle/collision.inc.c"
+#include "water_bottle/model.inc.c"

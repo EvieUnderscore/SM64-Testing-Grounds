@@ -21,7 +21,9 @@ enum MarioHandGSCId {
     /*0x02*/ MARIO_HAND_PEACE_SIGN,
     /*0x03*/ MARIO_HAND_HOLDING_CAP,
     /*0x04*/ MARIO_HAND_HOLDING_WING_CAP,
-    /*0x05*/ MARIO_HAND_RIGHT_OPEN
+    /*0x05*/ MARIO_HAND_RIGHT_OPEN,
+    /*0x06*/ MARIO_HAND_WATER,
+
 };
 
 enum MarioCapGSCId {
